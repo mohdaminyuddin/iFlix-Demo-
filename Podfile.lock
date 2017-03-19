@@ -1,15 +1,20 @@
 PODS:
   - Gloss (1.1.1)
   - IGListKit (2.0.0)
+  - SDWebImage (4.0.0-beta2):
+    - SDWebImage/Core (= 4.0.0-beta2)
+  - SDWebImage/Core (4.0.0-beta2)
 
 DEPENDENCIES:
   - Gloss (~> 1.1.1)
   - IGListKit (~> 2.0.0)
+  - SDWebImage (~> 4.0.0-beta2)
 
 SPEC CHECKSUMS:
   Gloss: 4a892694cba7387efa4102a51f86110651366b18
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
+  SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
 
-PODFILE CHECKSUM: a9a15efb2f75ab466e3f737e6e5cd14a8d384e4a
+PODFILE CHECKSUM: 03f3f13bbeb7cba3bc571f1a22dd25e59e229815
 
 COCOAPODS: 1.2.0

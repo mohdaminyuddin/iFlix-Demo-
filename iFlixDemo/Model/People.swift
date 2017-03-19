@@ -7,8 +7,9 @@
 //
 
 import Gloss
+import IGListKit
 
-struct People: Diffable, Decodable {
+final class People: IGListDiffable, Decodable {
   
   let profileId: Int
   var profilePath: String = ""
@@ -32,15 +33,17 @@ struct People: Diffable, Decodable {
     }
   }
   
-  var diffIdentifier: String {
-    return "\(profileId)"
+  func diffIdentifier() -> NSObjectProtocol {
+    return profileId as NSObjectProtocol
   }
   
-  static func ==(lhs: People, rhs: People) -> Bool {
-    return lhs.profileId == rhs.profileId &&
-      lhs.profilePath == rhs.profilePath &&
-      lhs.name == rhs.name &&
-      lhs.popularity == rhs.popularity
+  func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+    guard self !== object else { return true }
+    guard let object = object as? People else { return false }
+    return profileId == object.profileId &&
+      profilePath == object.profilePath &&
+      name == object.name &&
+      popularity == object.popularity
   }
   
 }

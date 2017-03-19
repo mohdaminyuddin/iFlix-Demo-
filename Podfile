@@ -6,6 +6,7 @@ target 'iFlixDemo' do
   use_frameworks!
   pod 'IGListKit', '~> 2.0.0'
   pod 'Gloss', '~> 1.1.1'
+  pod 'SDWebImage', '~> 4.0.0-beta2'
   
   # Pods for iFlixDemo
 

@@ -6,16 +6,18 @@
 //  Copyright © 2017 Wahyu Sumartha . All rights reserved.
 //
 import Gloss
+import IGListKit
 
-struct Movie: Diffable, Decodable {
+final class Movie: IGListDiffable, Decodable {
   let movieId: Int
   var title: String = ""
   var voteAverage: Double = 0.0
   var language: String = ""
   var overview: String = ""
   var posterPath: String = ""
- 
-  init?(json: JSON) {
+  var isFeatured: Bool = false 
+  
+  required init?(json: JSON) {
     guard let movieId: Int = "id" <~~ json else {
       return nil
     }
@@ -44,16 +46,19 @@ struct Movie: Diffable, Decodable {
 
   }
   
-  var diffIdentifier: String {
-    return "\(movieId)"
+  func diffIdentifier() -> NSObjectProtocol {
+    return movieId as NSObjectProtocol
   }
   
-  static func ==(lhs: Movie, rhs: Movie) -> Bool {
-    return lhs.movieId == rhs.movieId &&
-      lhs.title == rhs.title &&
-      lhs.voteAverage == rhs.voteAverage &&
-      lhs.language == rhs.language &&
-      lhs.overview == rhs.overview &&
-      lhs.posterPath == rhs.posterPath
+  func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+    guard self !== object else { return true }
+    guard let object = object as? Movie else { return false }
+    return movieId == object.movieId &&
+      title == object.title &&
+      voteAverage == object.voteAverage &&
+      language == object.language &&
+      overview == object.overview &&
+      posterPath == object.posterPath
+ 
   }
 }
