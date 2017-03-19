@@ -12,7 +12,7 @@ class ViewControllerViewModel {
   var data: [Any] = []
   var featuredMovie: Movie?
   var trendingMovies: [Movie] = []
-  
+  var popularPeoples: [People] = []
   init() {
     loadDataFromJSONBundle()
   }
@@ -39,6 +39,16 @@ class ViewControllerViewModel {
       }
     }
     
+    // insert people data 
+    if let peoplesJSONDict = bundleLoader.loadJSON(for: "PopularPeople") {
+      if let peopleJSONResult = peoplesJSONDict["results"] as? [[String: Any]] {
+        for peopleDict in peopleJSONResult {
+          if let people = People(json: peopleDict) {
+            popularPeoples.append(people)
+          }
+        }
+      }
+    }
     
   }
 }

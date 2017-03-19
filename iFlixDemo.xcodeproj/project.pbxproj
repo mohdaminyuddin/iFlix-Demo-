@@ -40,6 +40,9 @@
 		EB83736D1E7EBE5300196174 /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83736C1E7EBE5300196174 /* EmbeddedCollectionViewCell.swift */; };
 		EB8373701E7EC4B400196174 /* MovieHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83736E1E7EC4B400196174 /* MovieHeaderView.swift */; };
 		EB8373711E7EC4B400196174 /* MovieHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB83736F1E7EC4B400196174 /* MovieHeaderView.xib */; };
+		EB8373731E7EC8AD00196174 /* PeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */; };
+		EB8373761E7EC93300196174 /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */; };
+		EB8373771E7EC93300196174 /* PeopleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		EB83736C1E7EBE5300196174 /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB83736E1E7EC4B400196174 /* MovieHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieHeaderView.swift; sourceTree = "<group>"; };
 		EB83736F1E7EC4B400196174 /* MovieHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieHeaderView.xib; sourceTree = "<group>"; };
+		EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSectionController.swift; sourceTree = "<group>"; };
+		EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB185954FE60B97CE8CB9965 /* Pods-iFlixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlixDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFlixDemo/Pods-iFlixDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +247,7 @@
 				EB83736A1E7EBC3C00196174 /* EmbeddedSectionController.swift */,
 				EB8373641E7EB94400196174 /* TrendingSectionController.swift */,
 				EB8373591E7EAAA200196174 /* FeaturedSectionController.swift */,
+				EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -255,6 +262,8 @@
 				EB83736C1E7EBE5300196174 /* EmbeddedCollectionViewCell.swift */,
 				EB83736E1E7EC4B400196174 /* MovieHeaderView.swift */,
 				EB83736F1E7EC4B400196174 /* MovieHeaderView.xib */,
+				EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */,
+				EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -353,6 +362,7 @@
 				EB83733B1E7E479300196174 /* TopRatedMovie.json in Resources */,
 				EB6ED53B1E7E32870014F620 /* LaunchScreen.storyboard in Resources */,
 				EB8373611E7EAC8300196174 /* Featured.json in Resources */,
+				EB8373771E7EC93300196174 /* PeopleCollectionViewCell.xib in Resources */,
 				EB83734E1E7E580D00196174 /* movie-example.json in Resources */,
 				EB8373691E7EBA7300196174 /* MovieCollectionViewCell.xib in Resources */,
 				EB6ED5381E7E32870014F620 /* Assets.xcassets in Resources */,
@@ -469,12 +479,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8373761E7EC93300196174 /* PeopleCollectionViewCell.swift in Sources */,
 				EB6ED5521E7E42AB0014F620 /* DiffUtility.swift in Sources */,
 				EB6ED5331E7E32870014F620 /* ViewController.swift in Sources */,
 				EB8373651E7EB94400196174 /* TrendingSectionController.swift in Sources */,
 				EB8373681E7EBA7300196174 /* MovieCollectionViewCell.swift in Sources */,
 				EB8373701E7EC4B400196174 /* MovieHeaderView.swift in Sources */,
 				EB8373491E7E53AD00196174 /* BundleJSONLoader.swift in Sources */,
+				EB8373731E7EC8AD00196174 /* PeopleSectionController.swift in Sources */,
 				EB83735A1E7EAAA200196174 /* FeaturedSectionController.swift in Sources */,
 				EB83736B1E7EBC3C00196174 /* EmbeddedSectionController.swift in Sources */,
 				EB8373401E7E4A7600196174 /* PosterImage.swift in Sources */,

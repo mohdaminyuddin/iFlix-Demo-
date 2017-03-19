@@ -8,6 +8,11 @@
 
 import IGListKit
 
+enum HorizontalSectionType: String {
+  case trending = "Trending"
+  case popularPeoples = "Popular Peoples"
+}
+
 class ViewController: UIViewController {
 
   let collectionView: IGListCollectionView = {
@@ -61,7 +66,8 @@ class ViewController: UIViewController {
 extension ViewController: IGListAdapterDataSource {
   func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
     var items: [IGListDiffable] = [viewModel.featuredMovie!]
-    items += ["trending" as IGListDiffable] as [IGListDiffable]
+    items += [HorizontalSectionType.trending.rawValue as IGListDiffable] as [IGListDiffable]
+    items += [HorizontalSectionType.popularPeoples.rawValue as IGListDiffable] as [IGListDiffable]
     return items
    }
   
@@ -69,15 +75,7 @@ extension ViewController: IGListAdapterDataSource {
     if object is Movie {
         return FeaturedSectionController()
     } else if object is String {
-      if let section = object as? String {
-        if section == "trending" {
-          return EmbeddedSectionController()
-        } else {
-          return IGListSectionController()
-        }
-      } else {
-        return IGListSectionController()
-      }
+        return EmbeddedSectionController()
     } else {
       return IGListSectionController()
     }

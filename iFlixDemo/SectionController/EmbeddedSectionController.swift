@@ -14,9 +14,12 @@
 
 import IGListKit
 
+
 class EmbeddedSectionController: IGListSectionController {
   
-  var section: String?
+  var sectionType: String?
+  
+  var type: HorizontalSectionType?
   
   lazy var adapter: IGListAdapter = {
     let adapter = IGListAdapter(updater: IGListAdapterUpdater(),
@@ -55,7 +58,7 @@ extension EmbeddedSectionController: IGListSectionType {
   }
   
   func didUpdate(to object: Any) {
-    section = object as? String
+    sectionType = object as? String
   }
   
   func didSelectItem(at index: Int) {
@@ -66,11 +69,19 @@ extension EmbeddedSectionController: IGListSectionType {
 extension EmbeddedSectionController: IGListAdapterDataSource {
   func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
     let controller = viewController as? ViewController
-    return controller!.viewModel.trendingMovies as [IGListDiffable]
+    if HorizontalSectionType(rawValue: (sectionType!)) == .trending {
+      return controller!.viewModel.trendingMovies as [IGListDiffable]
+    } else {
+      return controller!.viewModel.popularPeoples as [IGListDiffable]
+    }
   }
   
   func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-    return TrendingSectionController()
+    if HorizontalSectionType(rawValue: (sectionType)!) == .trending {
+      return TrendingSectionController()
+    } else {
+      return PeopleSectionController()
+    }
   }
   
   func emptyView(for listAdapter: IGListAdapter) -> UIView? {
@@ -90,7 +101,7 @@ extension EmbeddedSectionController: IGListSupplementaryViewSource {
                                                                    bundle: nil,
                                                                    at: index) as! MovieHeaderView
 
-    view.headerLabel.text = section?.uppercased()
+    view.headerLabel.text = sectionType
     return view
   }
   
