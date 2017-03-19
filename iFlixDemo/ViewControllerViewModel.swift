@@ -13,6 +13,8 @@ class ViewControllerViewModel {
   var featuredMovie: Movie?
   var trendingMovies: [Movie] = []
   var popularPeoples: [People] = []
+  var continueWatchMovies: [Movie] = []
+  
   init() {
     loadDataFromJSONBundle()
   }
@@ -50,5 +52,15 @@ class ViewControllerViewModel {
       }
     }
     
+    // insert continue watch data 
+    if let continueWatchJSON = bundleLoader.loadJSON(for: "ContinueWatching") {
+      if let continueWatchJSONResult = continueWatchJSON["results"] as? [[String: Any]] {
+        for continueWatchDict in continueWatchJSONResult {
+          if let movie = Movie(json: continueWatchDict) {
+            continueWatchMovies.append(movie)
+          }
+        }
+      }
+    }
   }
 }

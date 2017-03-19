@@ -43,6 +43,10 @@
 		EB8373731E7EC8AD00196174 /* PeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */; };
 		EB8373761E7EC93300196174 /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */; };
 		EB8373771E7EC93300196174 /* PeopleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */; };
+		EB8373791E7ED0C000196174 /* WatchingSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373781E7ED0C000196174 /* WatchingSectionController.swift */; };
+		EB83737C1E7ED17500196174 /* ContinueWatchingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83737A1E7ED17500196174 /* ContinueWatchingCollectionViewCell.swift */; };
+		EB83737D1E7ED17500196174 /* ContinueWatchingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB83737B1E7ED17500196174 /* ContinueWatchingCollectionViewCell.xib */; };
+		EB83737F1E7ED7AA00196174 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83737E1E7ED7AA00196174 /* RandomNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,10 @@
 		EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSectionController.swift; sourceTree = "<group>"; };
 		EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB8373781E7ED0C000196174 /* WatchingSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchingSectionController.swift; sourceTree = "<group>"; };
+		EB83737A1E7ED17500196174 /* ContinueWatchingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueWatchingCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB83737B1E7ED17500196174 /* ContinueWatchingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContinueWatchingCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB83737E1E7ED7AA00196174 /* RandomNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		FB185954FE60B97CE8CB9965 /* Pods-iFlixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlixDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFlixDemo/Pods-iFlixDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +206,7 @@
 			children = (
 				EB6ED5511E7E42AB0014F620 /* DiffUtility.swift */,
 				EB8373481E7E53AD00196174 /* BundleJSONLoader.swift */,
+				EB83737E1E7ED7AA00196174 /* RandomNumber.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 				EB8373641E7EB94400196174 /* TrendingSectionController.swift */,
 				EB8373591E7EAAA200196174 /* FeaturedSectionController.swift */,
 				EB8373721E7EC8AD00196174 /* PeopleSectionController.swift */,
+				EB8373781E7ED0C000196174 /* WatchingSectionController.swift */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -264,6 +274,8 @@
 				EB83736F1E7EC4B400196174 /* MovieHeaderView.xib */,
 				EB8373741E7EC93300196174 /* PeopleCollectionViewCell.swift */,
 				EB8373751E7EC93300196174 /* PeopleCollectionViewCell.xib */,
+				EB83737A1E7ED17500196174 /* ContinueWatchingCollectionViewCell.swift */,
+				EB83737B1E7ED17500196174 /* ContinueWatchingCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -365,6 +377,7 @@
 				EB8373771E7EC93300196174 /* PeopleCollectionViewCell.xib in Resources */,
 				EB83734E1E7E580D00196174 /* movie-example.json in Resources */,
 				EB8373691E7EBA7300196174 /* MovieCollectionViewCell.xib in Resources */,
+				EB83737D1E7ED17500196174 /* ContinueWatchingCollectionViewCell.xib in Resources */,
 				EB6ED5381E7E32870014F620 /* Assets.xcassets in Resources */,
 				EB8373501E7E978900196174 /* ContinueWatching.json in Resources */,
 				EB83735F1E7EAB7300196174 /* FeaturedCollectionViewCell.xib in Resources */,
@@ -481,10 +494,12 @@
 			files = (
 				EB8373761E7EC93300196174 /* PeopleCollectionViewCell.swift in Sources */,
 				EB6ED5521E7E42AB0014F620 /* DiffUtility.swift in Sources */,
+				EB8373791E7ED0C000196174 /* WatchingSectionController.swift in Sources */,
 				EB6ED5331E7E32870014F620 /* ViewController.swift in Sources */,
 				EB8373651E7EB94400196174 /* TrendingSectionController.swift in Sources */,
 				EB8373681E7EBA7300196174 /* MovieCollectionViewCell.swift in Sources */,
 				EB8373701E7EC4B400196174 /* MovieHeaderView.swift in Sources */,
+				EB83737F1E7ED7AA00196174 /* RandomNumber.swift in Sources */,
 				EB8373491E7E53AD00196174 /* BundleJSONLoader.swift in Sources */,
 				EB8373731E7EC8AD00196174 /* PeopleSectionController.swift in Sources */,
 				EB83735A1E7EAAA200196174 /* FeaturedSectionController.swift in Sources */,
@@ -494,6 +509,7 @@
 				EB83733E1E7E492B00196174 /* Movie.swift in Sources */,
 				EB83736D1E7EBE5300196174 /* EmbeddedCollectionViewCell.swift in Sources */,
 				EB8373631E7EAD3B00196174 /* ViewControllerViewModel.swift in Sources */,
+				EB83737C1E7ED17500196174 /* ContinueWatchingCollectionViewCell.swift in Sources */,
 				EB6ED5311E7E32870014F620 /* AppDelegate.swift in Sources */,
 				EB8373521E7E987000196174 /* People.swift in Sources */,
 			);

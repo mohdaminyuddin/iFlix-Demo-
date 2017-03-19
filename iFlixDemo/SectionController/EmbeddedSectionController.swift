@@ -69,18 +69,24 @@ extension EmbeddedSectionController: IGListSectionType {
 extension EmbeddedSectionController: IGListAdapterDataSource {
   func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
     let controller = viewController as? ViewController
-    if HorizontalSectionType(rawValue: (sectionType!)) == .trending {
+    switch HorizontalSectionType(rawValue: (sectionType)!)! {
+    case .trending:
       return controller!.viewModel.trendingMovies as [IGListDiffable]
-    } else {
+    case .popularPeoples:
       return controller!.viewModel.popularPeoples as [IGListDiffable]
+    case .continueWatching:
+      return controller!.viewModel.continueWatchMovies as [IGListDiffable]
     }
   }
   
   func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-    if HorizontalSectionType(rawValue: (sectionType)!) == .trending {
+    switch HorizontalSectionType(rawValue: (sectionType)!)! {
+    case .trending:
       return TrendingSectionController()
-    } else {
+    case .popularPeoples:
       return PeopleSectionController()
+    case .continueWatching:
+      return WatchingSectionController()
     }
   }
   

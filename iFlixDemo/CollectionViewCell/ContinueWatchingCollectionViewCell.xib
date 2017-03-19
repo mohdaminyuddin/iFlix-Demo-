@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContinueWatchingCollectionViewCell" customModule="iFlixDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VQX-nL-yR7">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQI-gm-dbf">
+                        <rect key="frame" x="0.0" y="95" width="250" height="30"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bca-iP-VYO">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="2"/>
+                                <color key="progressTintColor" red="0.85882352941176465" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlH-1l-SV2">
+                                <rect key="frame" x="10" y="7" width="230" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bca-iP-VYO" firstAttribute="top" secondItem="IQI-gm-dbf" secondAttribute="top" id="5IW-80-UYs"/>
+                            <constraint firstItem="bca-iP-VYO" firstAttribute="leading" secondItem="IQI-gm-dbf" secondAttribute="leading" id="WuC-NL-oRm"/>
+                            <constraint firstItem="UlH-1l-SV2" firstAttribute="top" secondItem="bca-iP-VYO" secondAttribute="bottom" constant="5" id="aTv-Ja-hLB"/>
+                            <constraint firstAttribute="trailing" secondItem="bca-iP-VYO" secondAttribute="trailing" id="kqX-WD-wne"/>
+                            <constraint firstItem="UlH-1l-SV2" firstAttribute="leading" secondItem="IQI-gm-dbf" secondAttribute="leading" constant="10" id="mEE-Sx-iMe"/>
+                            <constraint firstAttribute="trailing" secondItem="UlH-1l-SV2" secondAttribute="trailing" constant="10" id="wCo-cu-eAa"/>
+                            <constraint firstAttribute="height" constant="30" id="zrq-iA-osg"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXA-6J-N6E">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="95"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El8-7F-qgv">
+                        <rect key="frame" x="105" y="27.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4as-ho-s23"/>
+                            <constraint firstAttribute="height" constant="40" id="Pyc-Rw-i22"/>
+                        </constraints>
+                        <state key="normal" image="play_icon"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VQX-nL-yR7" secondAttribute="trailing" id="11H-CV-2aI"/>
+                <constraint firstAttribute="bottom" secondItem="VQX-nL-yR7" secondAttribute="bottom" id="FY2-ue-OL7"/>
+                <constraint firstItem="IQI-gm-dbf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RIs-CI-WrR"/>
+                <constraint firstAttribute="bottom" secondItem="IQI-gm-dbf" secondAttribute="bottom" id="Vhj-OK-p79"/>
+                <constraint firstAttribute="trailing" secondItem="IQI-gm-dbf" secondAttribute="trailing" id="W08-TV-UkU"/>
+                <constraint firstItem="El8-7F-qgv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-15" id="YE7-6l-dUK"/>
+                <constraint firstItem="QXA-6J-N6E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f0I-Rt-1Se"/>
+                <constraint firstItem="VQX-nL-yR7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iPh-cd-M8t"/>
+                <constraint firstItem="VQX-nL-yR7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nXl-YZ-BcH"/>
+                <constraint firstItem="IQI-gm-dbf" firstAttribute="top" secondItem="QXA-6J-N6E" secondAttribute="bottom" id="nlp-G2-RuP"/>
+                <constraint firstItem="El8-7F-qgv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="uHt-vU-ddx"/>
+                <constraint firstItem="QXA-6J-N6E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xKd-Jp-NcY"/>
+                <constraint firstAttribute="trailing" secondItem="QXA-6J-N6E" secondAttribute="trailing" id="xVl-d3-P5Y"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="VQX-nL-yR7" id="qW0-jm-dR7"/>
+                <outlet property="movieTitleLabel" destination="UlH-1l-SV2" id="Dbo-CT-xR2"/>
+                <outlet property="progressView" destination="bca-iP-VYO" id="w2G-4b-ok6"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_icon" width="64" height="64"/>
+    </resources>
+</document>

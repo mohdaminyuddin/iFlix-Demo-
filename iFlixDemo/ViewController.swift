@@ -11,6 +11,7 @@ import IGListKit
 enum HorizontalSectionType: String {
   case trending = "Trending"
   case popularPeoples = "Popular Peoples"
+  case continueWatching = "Continue Watching"
 }
 
 class ViewController: UIViewController {
@@ -68,6 +69,7 @@ extension ViewController: IGListAdapterDataSource {
     var items: [IGListDiffable] = [viewModel.featuredMovie!]
     items += [HorizontalSectionType.trending.rawValue as IGListDiffable] as [IGListDiffable]
     items += [HorizontalSectionType.popularPeoples.rawValue as IGListDiffable] as [IGListDiffable]
+    items += [HorizontalSectionType.continueWatching.rawValue as IGListDiffable] as [IGListDiffable]
     return items
    }
   
