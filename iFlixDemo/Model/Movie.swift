@@ -38,7 +38,7 @@ struct Movie: Diffable, Decodable {
       self.overview = overview
     }
     
-    if let posterPath: String = "poster_page" <~~ json {
+    if let posterPath: String = "poster_path" <~~ json {
       self.posterPath = posterPath
     }
 

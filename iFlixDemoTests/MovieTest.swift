@@ -25,6 +25,20 @@ class MovieTest: XCTestCase {
     let movie = Movie(json: [String: Any]()) // empty object
     XCTAssertNil(movie)
   }
-  
-  
+ 
+  func testMovieData_FromJSONFile_Should_Return_Correct_Data() {
+    if let jsonDictionary = BundleJSONLoader().loadJSON(for: "movie-example") {
+      if let movie = Movie(json: jsonDictionary) {
+        XCTAssertEqual(movie.title, "The Shawshank Redemption")
+        XCTAssertEqual(movie.overview, "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.")
+        XCTAssertEqual(movie.movieId, 278)
+        XCTAssertEqual(movie.posterPath, "/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg")
+        XCTAssertEqual(movie.voteAverage, 8.4)
+      } else {
+        XCTFail("Could not bind jsondictionary to movie object")
+      }
+    } else {
+      XCTFail("Could not read json file")
+    }
+  }
 }
