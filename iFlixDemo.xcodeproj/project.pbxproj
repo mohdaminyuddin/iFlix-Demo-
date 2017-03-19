@@ -15,6 +15,16 @@
 		EB6ED5381E7E32870014F620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6ED5371E7E32870014F620 /* Assets.xcassets */; };
 		EB6ED53B1E7E32870014F620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6ED5391E7E32870014F620 /* LaunchScreen.storyboard */; };
 		EB6ED5461E7E32870014F620 /* iFlixDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ED5451E7E32870014F620 /* iFlixDemoTests.swift */; };
+		EB6ED5521E7E42AB0014F620 /* DiffUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ED5511E7E42AB0014F620 /* DiffUtility.swift */; };
+		EB8373391E7E475400196174 /* PopularPeople.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8373381E7E475400196174 /* PopularPeople.json */; };
+		EB83733B1E7E479300196174 /* TopRatedMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = EB83733A1E7E479300196174 /* TopRatedMovie.json */; };
+		EB83733E1E7E492B00196174 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83733D1E7E492B00196174 /* Movie.swift */; };
+		EB8373401E7E4A7600196174 /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83733F1E7E4A7600196174 /* PosterImage.swift */; };
+		EB8373431E7E4C3E00196174 /* PosterImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373421E7E4C3E00196174 /* PosterImageTest.swift */; };
+		EB8373451E7E522400196174 /* MovieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373441E7E522400196174 /* MovieTest.swift */; };
+		EB8373491E7E53AD00196174 /* BundleJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8373481E7E53AD00196174 /* BundleJSONLoader.swift */; };
+		EB83734C1E7E53F200196174 /* BundleJSONLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83734B1E7E53F200196174 /* BundleJSONLoaderTest.swift */; };
+		EB83734E1E7E580D00196174 /* movie-example.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8373461E7E535700196174 /* movie-example.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +53,16 @@
 		EB6ED5411E7E32870014F620 /* iFlixDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlixDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6ED5451E7E32870014F620 /* iFlixDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFlixDemoTests.swift; sourceTree = "<group>"; };
 		EB6ED5471E7E32870014F620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6ED5511E7E42AB0014F620 /* DiffUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffUtility.swift; sourceTree = "<group>"; };
+		EB8373381E7E475400196174 /* PopularPeople.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PopularPeople.json; sourceTree = "<group>"; };
+		EB83733A1E7E479300196174 /* TopRatedMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopRatedMovie.json; sourceTree = "<group>"; };
+		EB83733D1E7E492B00196174 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EB83733F1E7E4A7600196174 /* PosterImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		EB8373421E7E4C3E00196174 /* PosterImageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterImageTest.swift; sourceTree = "<group>"; };
+		EB8373441E7E522400196174 /* MovieTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTest.swift; sourceTree = "<group>"; };
+		EB8373461E7E535700196174 /* movie-example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "movie-example.json"; sourceTree = "<group>"; };
+		EB8373481E7E53AD00196174 /* BundleJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleJSONLoader.swift; sourceTree = "<group>"; };
+		EB83734B1E7E53F200196174 /* BundleJSONLoaderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleJSONLoaderTest.swift; sourceTree = "<group>"; };
 		FB185954FE60B97CE8CB9965 /* Pods-iFlixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlixDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFlixDemo/Pods-iFlixDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +129,9 @@
 		EB6ED52F1E7E32870014F620 /* iFlixDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EB83733C1E7E489000196174 /* Model */,
+				EB8373351E7E463900196174 /* JSONSource */,
+				EB6ED5501E7E42A20014F620 /* Utility */,
 				EB6ED5301E7E32870014F620 /* AppDelegate.swift */,
 				EB6ED5321E7E32870014F620 /* ViewController.swift */,
 				EB6ED5341E7E32870014F620 /* Main.storyboard */,
@@ -122,10 +145,57 @@
 		EB6ED5441E7E32870014F620 /* iFlixDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB83734A1E7E53E000196174 /* Utility */,
+				EB8373411E7E4C2200196174 /* Model */,
 				EB6ED5451E7E32870014F620 /* iFlixDemoTests.swift */,
 				EB6ED5471E7E32870014F620 /* Info.plist */,
+				EB8373461E7E535700196174 /* movie-example.json */,
 			);
 			path = iFlixDemoTests;
+			sourceTree = "<group>";
+		};
+		EB6ED5501E7E42A20014F620 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EB6ED5511E7E42AB0014F620 /* DiffUtility.swift */,
+				EB8373481E7E53AD00196174 /* BundleJSONLoader.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EB8373351E7E463900196174 /* JSONSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB8373381E7E475400196174 /* PopularPeople.json */,
+				EB83733A1E7E479300196174 /* TopRatedMovie.json */,
+			);
+			path = JSONSource;
+			sourceTree = "<group>";
+		};
+		EB83733C1E7E489000196174 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB83733D1E7E492B00196174 /* Movie.swift */,
+				EB83733F1E7E4A7600196174 /* PosterImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB8373411E7E4C2200196174 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB8373421E7E4C3E00196174 /* PosterImageTest.swift */,
+				EB8373441E7E522400196174 /* MovieTest.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB83734A1E7E53E000196174 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EB83734B1E7E53F200196174 /* BundleJSONLoaderTest.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8373391E7E475400196174 /* PopularPeople.json in Resources */,
+				EB83733B1E7E479300196174 /* TopRatedMovie.json in Resources */,
 				EB6ED53B1E7E32870014F620 /* LaunchScreen.storyboard in Resources */,
+				EB83734E1E7E580D00196174 /* movie-example.json in Resources */,
 				EB6ED5381E7E32870014F620 /* Assets.xcassets in Resources */,
 				EB6ED5361E7E32870014F620 /* Main.storyboard in Resources */,
 			);
@@ -330,7 +403,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6ED5521E7E42AB0014F620 /* DiffUtility.swift in Sources */,
 				EB6ED5331E7E32870014F620 /* ViewController.swift in Sources */,
+				EB8373491E7E53AD00196174 /* BundleJSONLoader.swift in Sources */,
+				EB8373401E7E4A7600196174 /* PosterImage.swift in Sources */,
+				EB83733E1E7E492B00196174 /* Movie.swift in Sources */,
 				EB6ED5311E7E32870014F620 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +416,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB83734C1E7E53F200196174 /* BundleJSONLoaderTest.swift in Sources */,
+				EB8373431E7E4C3E00196174 /* PosterImageTest.swift in Sources */,
+				EB8373451E7E522400196174 /* MovieTest.swift in Sources */,
 				EB6ED5461E7E32870014F620 /* iFlixDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +621,7 @@
 				EB6ED54C1E7E32870014F620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6ED54D1E7E32870014F620 /* Build configuration list for PBXNativeTarget "iFlixDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +630,7 @@
 				EB6ED54F1E7E32870014F620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
